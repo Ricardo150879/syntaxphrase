@@ -1,0 +1,1566 @@
+<!DOCtype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head><title>Syntax of the Phrase</title>
+<style>
+
+body{
+background-color:azure;
+font-size:26px;
+font-weight:bold;
+}
+
+h1 {  
+  position: relative;  
+  padding: 0;  
+  margin: 0;  
+  font-family: "Raleway", Cursive;  
+  font-weight: 300;  
+  font-size: 40px;  
+  color: #ffffff;  
+  -webkit-transition: all 0.4s ease 0s;  
+  -o-transition: all 0.4s ease 0s;  
+  transition: all 0.4s ease 0s;  
+  text-align: center;  
+}
+
+h2 { 
+ font-style: italic;   
+ font-family: "Playfair Display", "Bookman", serif;  
+ color: #070707;  
+ letter-spacing:- 0.005em;   
+ word-spacing: 1px;
+}
+
+.myframe{
+overflow-y:scroll; 
+height:500px; 
+font-weight: bold;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+}
+
+#myheader {
+  position: sticky;
+  top: 0;
+}
+
+
+textarea{
+max-width: 100%;
+width: 100%;
+box-sizing: border-box; /* Inclui padding e border na largura total */
+font-size:23px;
+color:#505050;
+font-weight:bold;
+marging:2px 2px;
+padding:2px 2px;
+}
+
+p{color: white;
+}
+
+#p1{color: black;
+}
+
+.blue{
+    color:blue;
+}
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+
+.purple{
+    color:purple;
+}
+
+.darkblue{
+    color:darkblue;
+}
+
+.gold{
+    color:gold;
+}
+
+.DeepPink{
+    color:DeepPink;
+}
+
+.gray{
+    color:gray;
+}
+
+.violet{
+    color:violet;
+}
+
+.DarkTurquoise{
+    color:DarkTurquoise;
+}
+
+.DarkOliveGreen{
+    color:DarkOliveGreen;
+}
+
+.maroon{
+    color:maroon;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Syntax of the Phrase</h1>
+</div>
+<hr>
+<div class="myframe">
+<h2>Noun phrase</h2>
+<p1>A noun phrase - or NP or nominal (phrase) - is a phrase that usually has a noun or pronoun as its head, and has the same grammatical functions as a noun. Noun phrases are very common cross-linguistically, and they may be the most frequently occurring phrase type.<br>
+Noun phrases often function as verb subjects and objects, as predicative expressions, and as complements of prepositions. One NP can be embedded inside another NP; for instance, some of his constituents has as a constituent the shorter NP his constituents.<br>
+A typical noun phrase consists of a noun (the head of the phrase) together with zero or more dependents of various types. (These dependents, since they modify a noun, are called adnominal.)</p1>
+<div id="myheader">
+<p style="background-color:purple;">NOUN PHRASE</p>
+</div>
+<p1>Try it yourself rewriting the bold sentences<br>
+The head noun appears in italic.</p1><br><br>
+<p1><b>This election-year's politics are annoying for many people.
+</b></p1><br>
+
+<textarea onkeyup="textChange1()"></textarea>
+<div id="colorText1"></div><br>
+
+<script>
+var textChange1=function(){
+    var text=event.target.value;
+
+
+    if(text.indexOf("This election-year's politics")>-1){
+        text=text.replace("This election-year's politics", "<span class='purple'>This election-year's <i>politics</i></span>");
+    }
+
+    if(text.indexOf("many people")>-1){
+        text=text.replace("many people", "<span class='purple'>many <i>people</i></span>");
+    }
+
+       document.getElementById("colorText1").innerHTML=text;
+}
+</script>
+
+<p1><b>Almost every sentence contains at least one noun phrase.</b></p1><br>
+<textarea onkeyup="textChange2()"></textarea>
+<div id="colorText2"></div><br>
+
+<script>
+var textChange2=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("Almost every sentence")>-1){
+        text=text.replace("Almost every sentence", "<span class='purple'>Almost every <i>sentence</i></span>");
+    }
+
+   if(text.indexOf("at least one noun phrase")>-1){
+        text=text.replace("at least one noun phrase", "<span class='purple'>at least one noun <i>phrase</i></span>");
+    }
+
+   document.getElementById("colorText2").innerHTML=text;
+}
+</script>
+
+<p1><b>Current economic weakness may be a result of high energy prices.</b></p1><br>
+<textarea onkeyup="textChange3()"></textarea>
+<div id="colorText3"></div><br>
+
+<script>
+var textChange3=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("Current economic weakness")>-1){
+        text=text.replace("Current economic weakness", "<span class='purple'>Current economic <i>weakness</i></span>");
+    }
+
+   if(text.indexOf("result of high energy prices")>-1){
+        text=text.replace("result of high energy prices", "<span class='purple'><i>result</i> of high energy prices</span>");
+    }
+
+   document.getElementById("colorText3").innerHTML=text;
+}
+</script>
+
+<p1><b>This sentence contains two noun phrases.</b></p1><br>
+<textarea onkeyup="textChange4()"></textarea>
+<div id="colorText4"></div><br>
+
+<script>
+var textChange4=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("This sentence")>-1){
+        text=text.replace("This sentence", "<span class='purple'>This <i>sentence</i></span>");
+    }
+
+   if(text.indexOf("two noun phrases")>-1){
+        text=text.replace("two noun phrases", "<span class='purple'>two noun <i>phrases</i></span>");
+    }
+
+   document.getElementById("colorText4").innerHTML=text;
+}
+</script>
+
+
+<p1><b>It contains them.</b></p1><br>
+<textarea onkeyup="textChange5()"></textarea>
+<div id="colorText5"></div><br>
+
+<script>
+var textChange5=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("It")>-1){
+        text=text.replace("It", "<span class='purple'><i>It</i></span>");
+    }
+
+   if(text.indexOf("them")>-1){
+        text=text.replace("them", "<span class='purple'><i>them</i></span>");
+    }
+
+   document.getElementById("colorText5").innerHTML=text;
+}
+</script>
+
+<p1><b>The subject noun phrase that is present in
+this sentence is long.
+ </b></p1><br>
+<textarea onkeyup="textChange6()"></textarea>
+<div id="colorText6"></div><br>
+
+<script>
+var textChange6=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("The subject noun phrase")>-1){
+        text=text.replace("The subject noun phrase", "<span class='purple'>The subject noun <i>phrase</i></span>");
+    }
+
+   if(text.indexOf("this sentence")>-1){
+        text=text.replace("this sentence", "<span class='purple'>this sentence</span>");
+    }
+
+   document.getElementById("colorText6").innerHTML=text;
+}
+</script>
+
+<p1><b>It is long.</b></p1><br>
+<textarea onkeyup="textChange6x()"></textarea>
+<div id="colorText6x"></div><br>
+
+<script>
+var textChange6x=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("It")>-1){
+        text=text.replace("It", "<span class='purple'><i>It</i></span>");
+    }
+
+   document.getElementById("colorText6x").innerHTML=text;
+}
+</script>
+
+<p1><b>Noun phrases can be embedded in other
+noun phrases.</b></p1><br>
+<textarea onkeyup="textChange6x1()"></textarea>
+<div id="colorText6x1"></div><br>
+
+<script>
+var textChange6x1=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("Noun phrases")>-1){
+        text=text.replace("Noun phrases", "<span class='purple'>Noun <i>phrases</i></span>");
+    }
+
+   if(text.indexOf("other noun phrases")>-1){
+        text=text.replace("other noun phrases", "<span class='purple'>other noun <i>phrases</i></span>");
+    }
+
+   document.getElementById("colorText6x1").innerHTML=text;
+}
+</script>
+
+<p1><b>They can be embedded in them.</b></p1><br>
+<textarea onkeyup="textChange6x2()"></textarea>
+<div id="colorText6x2"></div><br>
+
+<script>
+var textChange6x2=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("They")>-1){
+        text=text.replace("They", "<span class='purple'><i>They</i></span>");
+    }
+
+   if(text.indexOf("them")>-1){
+        text=text.replace("them", "<span class='purple'><i>them</i></span>");
+    }
+
+   document.getElementById("colorText6x2").innerHTML=text;
+}
+</script>
+
+<p1><b>He saw someone.</b></p1><br>
+<textarea onkeyup="textChange6x3()"></textarea>
+<div id="colorText6x3"></div><br>
+
+<script>
+var textChange6x3=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("He")>-1){
+        text=text.replace("He", "<span class='purple'><i>He</i></span>");
+    }
+
+   if(text.indexOf("someone")>-1){
+        text=text.replace("someone", "<span class='purple'><i>someone</i></span>");
+    }
+
+   document.getElementById("colorText6x3").innerHTML=text;
+}
+</script>
+
+<p1><b>Milk is good.</b></p1><br>
+<textarea onkeyup="textChange6x4()"></textarea>
+<div id="colorText6x4"></div><br>
+
+<script>
+var textChange6x4=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("Milk")>-1){
+        text=text.replace("Milk", "<span class='purple'><i>Milk</i></span>");
+    }
+
+   document.getElementById("colorText6x4").innerHTML=text;
+}
+</script>
+
+<p1><b>Milk is good.</b></p1><br>
+<textarea onkeyup="textChange6x5()"></textarea>
+<div id="colorText6x5"></div><br>
+
+<script>
+var textChange6x5=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("Milk")>-1){
+        text=text.replace("Milk", "<span class='purple'><i>Milk</i></span>");
+    }
+
+   document.getElementById("colorText6x5").innerHTML=text;
+}
+</script>
+
+<p1><b>They spoke about corruption.</b></p1><br>
+<textarea onkeyup="textChange6x6()"></textarea>
+<div id="colorText6x6"></div><br>
+
+<script>
+var textChange6x6=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("They")>-1){
+        text=text.replace("They", "<span class='purple'><i>They</i></span>");
+    }
+
+   if(text.indexOf("corruption")>-1){
+        text=text.replace("corruption", "<span class='purple'><i>corruption</i></span>");
+    }
+
+   document.getElementById("colorText6x6").innerHTML=text;
+}
+</script>
+
+<p1><b>My father wants to buy a new car.</b></p1><br>
+<textarea onkeyup="textChange6x7()"></textarea>
+<div id="colorText6x7"></div><br>
+
+<script>
+var textChange6x7=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("My father")>-1){
+        text=text.replace("My father", "<span class='purple'>My <i>father</i></span>");
+    }
+
+   if(text.indexOf("a new car")>-1){
+        text=text.replace("a new car", "<span class='purple'>a new <i>car</i></span>");
+    }
+
+   document.getElementById("colorText6x7").innerHTML=text;
+}
+</script>
+
+<p1><b>The agency gave him a few numbers to ring.</b></p1><br>
+<textarea onkeyup="textChange6x8()"></textarea>
+<div id="colorText6x8"></div><br>
+
+<script>
+var textChange6x8=function(){
+    var text=event.target.value;
+
+    if(text.indexOf("The agency")>-1){
+        text=text.replace("The agency", "<span class='purple'>The <i> agency</i></span>");
+    }
+
+   if(text.indexOf("him")>-1){
+        text=text.replace("him", "<span class='purple'><i>him</i></span>");
+    }
+
+   if(text.indexOf("a few numbers to ring")>-1){
+        text=text.replace("a few numbers to ring", "<span class='purple'>a few <i>numbers</i> to ring</span>");
+    }
+
+   document.getElementById("colorText6x8").innerHTML=text;
+}
+</script>
+</div>
+<hr>
+<div class="myframe">
+<h2>Adjective phrase</h2>
+<p1>An adjective phrase (or adjectival phrase) is a phrase whose head is an adjective. Almost any grammar or syntax textbook or dictionary of
+linguistics terminology defines the adjective phrase in a similar way, e.g. Kesner Bland (1996:499), Crystal (1996:9), Greenbaum (1996:288ff.),
+Haegeman and Gueron (1999:70f.), Brinton (2000:172f.), Jurafsky and Martin (2000:362). The adjective can initiate the phrase (e.g. fond of
+steak), conclude the phrase (e.g. very happy), or appear in a medial position (e.g. quite upset about it). The dependents of the head adjective - i.e. the other words and phrases inside the adjective phrase—are typically adverb or prepositional phrases, but they can also be clauses (e.g.louder than you are). Adjectives and adjective phrases function in two basic ways, attributively or predicatively. An attributive adjective (phrase) precedes the noun of a noun phrase (e.g. a very happy man). A predicative adjective (phrase) follows a linking verb and serves to describe the preceding subject, e.g. The man is very happy.</p1>
+<div id="myheader">
+<p style="background-color:green;">ADJECTIVE PHRASE</p>
+</div>
+<p1><i>Try it yourself rewriting the bold sentences<br>
+The head adjective in each of these phrases is in italic</i></p1><br><br>
+<p1><b>Sentences can contain tremendously long phrases.</b></p1><br>
+
+<textarea onkeyup="textChange7()"></textarea>
+<div id="colorText7"></div><br>
+
+<script>
+var textChange7=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("tremendously long")>-1){
+        text=text.replace("tremendously long", "<span class='green'>tremendously <i>long</i></span>");
+    }
+
+       document.getElementById("colorText7").innerHTML=text;
+}
+</script>
+
+<p1><b>This sentence is not tremendously long.</b></p1><br>
+
+<textarea onkeyup="textChange8()"></textarea>
+<div id="colorText8"></div><br>
+
+<script>
+var textChange8=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("tremendously long")>-1){
+        text=text.replace("tremendously long", "<span class='green'>tremendously <i>long</i></span>");
+    }
+
+       document.getElementById("colorText8").innerHTML=text;
+}
+</script>
+
+<p1><b>A player faster than you was on their team gaining weight.</b></p1><br>
+<textarea onkeyup="textChange9()"></textarea>
+<div id="colorText9"></div><br>
+
+<script>
+var textChange9=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("faster than you")>-1){
+        text=text.replace("faster than you", "<span class='green'><i>faster</i> than you</span>");
+    }
+
+       document.getElementById("colorText9").innerHTML=text;
+}
+</script>
+
+<p1><b>He is faster than you.</b></p1><br>
+
+<textarea onkeyup="textChange10()"></textarea>
+<div id="colorText10"></div><br>
+
+<script>
+var textChange10=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("faster than you")>-1){
+        text=text.replace("faster than you", "<span class='green'><i>faster</i> than you</span>");
+    }
+
+       document.getElementById("colorText10").innerHTML=text;
+}
+</script>
+
+<p1><b>Sam ordered a very spicy but quite small pizza.</b></p1><br>
+
+<textarea onkeyup="textChange11()"></textarea>
+<div id="colorText11"></div><br>
+
+<script>
+var textChange11=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("very spicy")>-1){
+        text=text.replace("very spicy", "<span class='green'>very <i>spicy</i></span>");
+    }
+
+    if (text.indexOf("quite small")>-1){
+        text=text.replace("quite small", "<span class='green'>quite <i>small</i></span>");
+    }
+
+       document.getElementById("colorText11").innerHTML=text;
+}
+</script>
+
+<p1><b>The pizza is very spicy but quite small.</b></p1><br>
+
+<textarea onkeyup="textChange11x()"></textarea>
+<div id="colorText11x"></div><br>
+
+<script>
+var textChange11x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("very spicy")>-1){
+        text=text.replace("very spicy", "<span class='green'>very <i>spicy</i></span>");
+    }
+
+    if (text.indexOf("quite small")>-1){
+        text=text.replace("quite small", "<span class='green'>quite <i>small</i></span>");
+    }
+
+       document.getElementById("colorText11x").innerHTML=text;
+}
+</script>
+
+<p1><b>The people, angry because of the high prices, were protesting.</b></p1><br>
+
+<textarea onkeyup="textChange11x1()"></textarea>
+<div id="colorText11x1"></div><br>
+
+<script>
+var textChange11x1=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("angry")>-1){
+        text=text.replace("angry", "<span class='green'><i>angry</i></span>");
+    }
+
+       document.getElementById("colorText11x1").innerHTML=text;
+}
+</script>
+
+<p1><b>The people are angry with the high prices.</b></p1><br>
+
+<textarea onkeyup="textChange11x2()"></textarea>
+<div id="colorText11x2"></div><br>
+
+<script>
+var textChange11x2=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("angry with the high prices")>-1){
+        text=text.replace("angry with the high prices", "<span class='green'><i>angry </i>with the high prices</span>");
+    }
+
+       document.getElementById("colorText11x2").innerHTML=text;
+}
+</script>
+
+<p1><b>That's a lovely cake.</b></p1><br>
+
+<textarea onkeyup="textChange11x3()"></textarea>
+<div id="colorText11x3"></div><br>
+
+<script>
+var textChange11x3=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("lovely")>-1){
+        text=text.replace("lovely", "<span class='green'><i>lovely</i></span>");
+    }
+
+       document.getElementById("colorText11x3").innerHTML=text;
+}
+</script>
+
+<p1><b>These flowers are wonderful.</b></p1><br>
+
+<textarea onkeyup="textChange11x4()"></textarea>
+<div id="colorText11x4"></div><br>
+
+<script>
+var textChange11x4=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("wonderful")>-1){
+        text=text.replace("wonderful", "<span class='green'><i>wonderful</i></span>");
+    }
+
+       document.getElementById("colorText11x4").innerHTML=text;
+}
+</script>
+
+<p1><b>That soup is pretty cold.</b></p1><br>
+
+<textarea onkeyup="textChange11x5()"></textarea>
+<div id="colorText11x5"></div><br>
+
+<script>
+var textChange11x5=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("pretty cold")>-1){
+        text=text.replace("pretty cold", "<span class='green'>pretty <i>cold</i></span>");
+    }
+
+       document.getElementById("colorText11x5").innerHTML=text;
+}
+</script>
+
+<p1><b>Many of the exercises are fairly difficult.</b></p1><br>
+
+<textarea onkeyup="textChange11x6()"></textarea>
+<div id="colorText11x6"></div><br>
+
+<script>
+var textChange11x6=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("fairly difficult")>-1){
+        text=text.replace("fairly difficult", "<span class='green'>fairly <i>difficult</i></span>");
+    }
+
+       document.getElementById("colorText11x6").innerHTML=text;
+}
+</script>
+
+<p1><b>The food was tasty enough.</b></p1><br>
+
+<textarea onkeyup="textChange11x7()"></textarea>
+<div id="colorText11x7"></div><br>
+
+<script>
+var textChange11x7=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("tasty enough")>-1){
+        text=text.replace("tasty enough", "<span class='green'><i>tasty </i>enough</span>");
+    }
+
+       document.getElementById("colorText11x7").innerHTML=text;
+}
+</script>
+
+<p1><b>The car is economical for its size.</b></p1><br>
+
+<textarea onkeyup="textChange11x8()"></textarea>
+<div id="colorText11x8"></div><br>
+
+<script>
+var textChange11x8=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("economical for its size")>-1){
+        text=text.replace("economical for its size", "<span class='green'><i>economical</i> for its size</span>");
+    }
+
+       document.getElementById("colorText11x8").innerHTML=text;
+}
+</script>
+
+<p1><b>She was aware of the danger of travelling alone.</b></p1><br>
+
+<textarea onkeyup="textChange11x9()"></textarea>
+<div id="colorText11x9"></div><br>
+
+<script>
+var textChange11x9=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("aware of the danger of travelling alone")>-1){
+        text=text.replace("aware of the danger of travelling alone", "<span class='green'><i>aware</i> of the danger of travelling alone</span>");
+    }
+
+       document.getElementById("colorText11x9").innerHTML=text;
+}
+</script>
+
+<p1><b>Some people weren't willing to pay extra to book a seat on the plane.</b></p1><br>
+
+<textarea onkeyup="textChange11x10()"></textarea>
+<div id="colorText11x10"></div><br>
+
+<script>
+var textChange11x10=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("willing to pay extra to book a seat on the plane")>-1){
+        text=text.replace("willing to pay extra to book a seat on the plane", "<span class='green'><i>willing</i> to pay extra to book a seat on the plane</span>");
+    }
+
+       document.getElementById("colorText11x10").innerHTML=text;
+}
+</script>
+
+<p1><b>We're not very keen on having an activity holiday.</b></p1><br>
+
+<textarea onkeyup="textChange11x11()"></textarea>
+<div id="colorText11x11"></div><br>
+
+<script>
+var textChange11x11=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("very keen on having an activity holiday")>-1){
+        text=text.replace("very keen on having an activity holiday", "<span class='green'>very <i>keen</i> on having an activity holiday</span>");
+    }
+
+       document.getElementById("colorText11x11").innerHTML=text;
+}
+</script>
+
+<p1><b>Are you really interested in rock and roll?</b></p1><br>
+
+<textarea onkeyup="textChange11x12()"></textarea>
+<div id="colorText11x12"></div><br>
+
+<script>
+var textChange11x12=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("really interested in rock and roll")>-1){
+        text=text.replace("really interested in rock and roll", "<span class='green'>really <i>interested</i> in rock and roll</span>");
+    }
+
+       document.getElementById("colorText11x12").innerHTML=text;
+}
+</script>
+</div>
+<br>
+<div class="myframe">
+<h2>Adverbial Phrase</h2>
+<p1>In linguistics, an adverbial phrase ("AdvP") is a multi-word expression operating adverbially: its syntactic function is to modify other expressions, including verbs, adjectives, adverbs, adverbials, and sentences. Adverbial phrases can be divided into two types: complement adverbs and modifier adverbs. For example, in the sentence She sang very well, the expression very well is an adverbial phrase, as it modifies the verb to sing. More specifically, the adverbial phrase very well contains two adverbs, very and well: while well modifies the verb to convey information about the manner of singing (for example, She sang well versus She sang badly), very is a degree modifier that conveys information about the degree to which the action of singing well was accomplished (for example, Not only did she sing well, she sang very well).</p1>
+<div id="myheader">
+<p style="background-color:darkblue;">ADVERBIAL PHRASE</p>
+</div>
+<p1><i>Try it yourself rewriting the bold sentences<br>
+The head adverb in each of these phrases is in italic</i></p1><br><br>
+<p1><b>They repaired my car very quickly.</b></p1><br>
+
+<textarea onkeyup="textChange12x()"></textarea>
+<div id="colorText12x"></div><br>
+
+<script>
+var textChange12x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("very quickly")>-1){
+        text=text.replace("very quickly", "<span class='darkblue'>very <i>quickly</i></span>");
+    }
+
+       document.getElementById("colorText12x").innerHTML=text;
+}
+</script>
+
+<p1><b>He worked extremely hard in the game.</b></p1><br>
+
+<textarea onkeyup="textChange13x()"></textarea>
+<div id="colorText13x"></div><br>
+
+<script>
+var textChange13x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("extremely hard")>-1){
+        text=text.replace("extremely hard", "<span class='darkblue'>extremely <i>hard</i></span>");
+    }
+
+       document.getElementById("colorText13x").innerHTML=text;
+}
+</script>
+
+<p1><b>She did really well in her race.</b></p1><br>
+
+<textarea onkeyup="textChange14x()"></textarea>
+<div id="colorText14x"></div><br>
+
+<script>
+var textChange14x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("really well")>-1){
+        text=text.replace("really well", "<span class='darkblue'>really <i>well</i></span>");
+    }
+
+       document.getElementById("colorText14x").innerHTML=text;
+}
+</script>
+
+<p1><b>Why are you leaving so soon?</b></p1><br>
+
+<textarea onkeyup="textChange15x()"></textarea>
+<div id="colorText15x"></div><br>
+
+<script>
+var textChange15x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("so soon")>-1){
+        text=text.replace("so soon", "<span class='darkblue'>so <i>soon</i></span>");
+    }
+
+       document.getElementById("colorText15x").innerHTML=text;
+}
+</script>
+
+<p1><b>I'll go to bed in an hour.</b></p1><br>
+
+<textarea onkeyup="textChange16x()"></textarea>
+<div id="colorText16x"></div><br>
+
+<script>
+var textChange16x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("in an hour")>-1){
+        text=text.replace("in an hour", "<span class='darkblue'>in an <i>hour</i></span>");
+    }
+
+       document.getElementById("colorText16x").innerHTML=text;
+}
+</script>
+
+<p1><b>We arrived three hours late.</b></p1><br>
+
+<textarea onkeyup="textChange17x()"></textarea>
+<div id="colorText17x"></div><br>
+
+<script>
+var textChange17x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("three hours late")>-1){
+        text=text.replace("three hours late", "<span class='darkblue'>three hours <i>late</i></span>");
+    }
+
+       document.getElementById("colorText17x").innerHTML=text;
+}
+</script>
+
+<p1><b>Later in the day the situation had resolved.</b></p1><br>
+
+<textarea onkeyup="textChange18x()"></textarea>
+<div id="colorText18x"></div><br>
+
+<script>
+var textChange18x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Later in the day")>-1){
+        text=text.replace("Later in the day", "<span class='darkblue'><i>Later</i> in the day</span>");
+    }
+
+       document.getElementById("colorText18x").innerHTML=text;
+}
+</script>
+
+<p1><b>Purchase of State vehicles is handled similarly to all State purchases.</b></p1><br>
+
+<textarea onkeyup="textChange19x()"></textarea>
+<div id="colorText19x"></div><br>
+
+<script>
+var textChange19x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("similarly to all State purchases")>-1){
+        text=text.replace("similarly to all State purchases", "<span class='darkblue'><i>similarly</i> to all State purchases</span>");
+    }
+
+       document.getElementById("colorText19x").innerHTML=text;
+}
+</script>
+
+<p1><b>We usually go on holiday in August.</b></p1><br>
+
+<textarea onkeyup="textChange20x()"></textarea>
+<div id="colorText20x"></div><br>
+
+<script>
+var textChange20x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("usually")>-1){
+        text=text.replace("usually", "<span class='darkblue'><i>usually</i></span>");
+    }
+
+       document.getElementById("colorText20x").innerHTML=text;
+}
+</script>
+
+<p1><b>Time goes very quickly.</b></p1><br>
+
+<textarea onkeyup="textChange21x()"></textarea>
+<div id="colorText21x"></div><br>
+
+<script>
+var textChange21x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("very quickly")>-1){
+        text=text.replace("very quickly", "<span class='darkblue'>very <i>quickly</i></span>");
+    }
+
+       document.getElementById("colorText21x").innerHTML=text;
+}
+</script>
+
+<p1><b>The day passed quickly enough.</b></p1><br>
+
+<textarea onkeyup="textChange22x()"></textarea>
+<div id="colorText22x"></div><br>
+
+<script>
+var textChange22x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("quickly enough")>-1){
+        text=text.replace("quickly enough", "<span class='darkblue'><i>quickly</i> enough</span>");
+    }
+
+       document.getElementById("colorText22x").innerHTML=text;
+}
+</script>
+
+<p1><b>This works really well for its size.</b></p1><br>
+
+<textarea onkeyup="textChange23x()"></textarea>
+<div id="colorText23x"></div><br>
+
+<script>
+var textChange23x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("really well for its size")>-1){
+        text=text.replace("really well for its size", "<span class='darkblue'>really <i>well</i> for its size</span>");
+    }
+
+       document.getElementById("colorText23x").innerHTML=text;
+}
+</script>
+
+<p1><b>Luckily for us, the cost was not so high.</b></p1><br>
+
+<textarea onkeyup="textChange24x()"></textarea>
+<div id="colorText24x"></div><br>
+
+<script>
+var textChange24x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Luckily for us")>-1){
+        text=text.replace("Luckily for us", "<span class='darkblue'><i>Luckily</i> for us</span>");
+    }
+
+       document.getElementById("colorText24x").innerHTML=text;
+}
+</script>
+
+<p1><b>We kept the new money quite separately from what we'd already collected.</b></p1><br>
+
+<textarea onkeyup="textChange25x()"></textarea>
+<div id="colorText25x"></div><br>
+
+<script>
+var textChange25x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("quite separately from what we'd already collected")>-1){
+        text=text.replace("quite separately from what we'd already collected", "<span class='darkblue'>quite <i>separately</i> from what we'd already collected</span>");
+    }
+
+       document.getElementById("colorText25x").innerHTML=text;
+}
+</script>
+</div>
+<hr>
+<div class="myframe">
+<h2>Prepositional phrase</h2>
+<p1>Prepositional phrases consist of a preposition and the words which follow it (a complement). The complement is most commonly a noun phrase or pronoun, but it can also be, an adverb phrase (usually one of place or time), a verb in the -ing form or, less commonly, a prepositional phrase or a wh-clause.</p1>
+<div id="myheader">
+<p style="background-color:gold;">PREPOSITIONAL PHRASE</p>
+</div>
+<p1><i>Try it yourself rewriting the bold sentences</i></p1><br><br>
+<p1><b>They first met at a party.</b></p1><br>
+
+<textarea onkeyup="textChange26x()"></textarea>
+<div id="colorText26x"></div><br>
+
+<script>
+var textChange26x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("at a party")>-1){
+        text=text.replace("at a party", "<span class='gold'><i>at</i> a party</span>");
+    }
+
+       document.getElementById("colorText26x").innerHTML=text;
+}
+</script>
+
+<p1><b>She was taken ill during the film.</b></p1><br>
+
+<textarea onkeyup="textChange27x()"></textarea>
+<div id="colorText27x"></div><br>
+
+<script>
+var textChange27x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("during the film")>-1){
+        text=text.replace("during the film", "<span class='gold'><i>during</i> the film</span>");
+    }
+
+       document.getElementById("colorText27x").innerHTML=text;
+}
+</script>
+
+<p1><b>Would you like to come with me please?</b></p1><br>
+
+<textarea onkeyup="textChange28x()"></textarea>
+<div id="colorText28x"></div><br>
+
+<script>
+var textChange28x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("with me")>-1){
+        text=text.replace("with me", "<span class='gold'><i>with</i> me</span>");
+    }
+
+       document.getElementById("colorText28x").innerHTML=text;
+}
+</script>
+
+<p1><b>From there, it'll take you about half an hour to our house.</b></p1><br>
+
+<textarea onkeyup="textChange29x()"></textarea>
+<div id="colorText29x"></div><br>
+
+<script>
+var textChange29x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("From there")>-1){
+        text=text.replace("From there", "<span class='gold'><i>From</i> there</span>");
+    }
+
+       document.getElementById("colorText29x").innerHTML=text;
+}
+</script>
+
+<p1><b>Until quite recently, no one knew about his paintings</b></p1><br>
+
+<textarea onkeyup="textChange30x()"></textarea>
+<div id="colorText30x"></div><br>
+
+<script>
+var textChange30x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Until quite recently")>-1){
+        text=text.replace("Until quite recently", "<span class='gold'><i>Until</i> quite recently</span>");
+    }
+
+       document.getElementById("colorText30x").innerHTML=text;
+}
+</script>
+
+<p1><b>She's decided on doing a Chinese language course.</b></p1><br>
+
+<textarea onkeyup="textChange31x()"></textarea>
+<div id="colorText31x"></div><br>
+
+<script>
+var textChange31x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("on doing a Chinese language course")>-1){
+        text=text.replace("on doing a Chinese language course", "<span class='gold'><i>on</i> doing a Chinese language course</span>");
+    }
+
+       document.getElementById("colorText31x").innerHTML=text;
+}
+</script>
+
+<p1><b>It's a machine for making ice-cream.</b></p1><br>
+
+<textarea onkeyup="textChange32x()"></textarea>
+<div id="colorText32x"></div><br>
+
+<script>
+var textChange32x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("for making ice-cream")>-1){
+        text=text.replace("for making ice-cream", "<span class='gold'><i>for</i> making ice-cream</span>");
+    }
+
+       document.getElementById("colorText32x").innerHTML=text;
+}
+</script>
+
+<p1><b>If you can wait until after my meeting with Jack, we can talk then.</b></p1><br>
+
+<textarea onkeyup="textChange33x()"></textarea>
+<div id="colorText33x"></div><br>
+
+<script>
+var textChange33x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("until after my meeting with Jack")>-1){
+        text=text.replace("until after my meeting with Jack", "<span class='gold'><i>until</i> after my meeting with Jack</span>");
+    }
+
+       document.getElementById("colorText33x").innerHTML=text;
+}
+</script>
+
+<p1><b>We were really surprised at what they wrote.</b></p1><br>
+
+<textarea onkeyup="textChange34x()"></textarea>
+<div id="colorText34x"></div><br>
+
+<script>
+var textChange34x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("at what they wrote")>-1){
+        text=text.replace("at what they wrote", "<span class='gold'><i>at</i> what they wrote</span>");
+    }
+
+       document.getElementById("colorText34x").innerHTML=text;
+}
+</script>
+
+<p1><b>She walked to his desk.</b></p1><br>
+
+<textarea onkeyup="textChange35x()"></textarea>
+<div id="colorText35x"></div><br>
+
+<script>
+var textChange35x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("to his desk")>-1){
+        text=text.replace("to his desk", "<span class='gold'><i>to</i> his desk</span>");
+    }
+
+       document.getElementById("colorText35x").innerHTML=text;
+}
+</script>
+
+<p1><b>Ryan could see her in the room.</b></p1><br>
+
+<textarea onkeyup="textChange36x()"></textarea>
+<div id="colorText36x"></div><br>
+
+<script>
+var textChange36x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("in the room")>-1){
+        text=text.replace("in the room", "<span class='gold'><i>in</i> the room</span>");
+    }
+
+       document.getElementById("colorText36x").innerHTML=text;
+}
+</script>
+
+<p1><b>David walked on top of the building.</b></p1><br>
+
+<textarea onkeyup="textChange37x()"></textarea>
+<div id="colorText37x"></div><br>
+
+<script>
+var textChange37x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("on top of the building")>-1){
+        text=text.replace("on top of the building", "<span class='gold'><i>on</i> top of the building</span>");
+    }
+
+       document.getElementById("colorText37x").innerHTML=text;
+}
+</script>
+
+<p1><b>They walked up the stairs.</b></p1><br>
+
+<textarea onkeyup="textChange38x()"></textarea>
+<div id="colorText38x"></div><br>
+
+<script>
+var textChange38x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("up the stairs")>-1){
+        text=text.replace("up the stairs", "<span class='gold'><i>up</i> the stairs</span>");
+    }
+
+       document.getElementById("colorText38x").innerHTML=text;
+}
+</script>
+
+<p1><b>Philip ate in the kitchen.</b></p1><br>
+
+<textarea onkeyup="textChange39x()"></textarea>
+<div id="colorText39x"></div><br>
+
+<script>
+var textChange39x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("in the kitchen")>-1){
+        text=text.replace("in the kitchen", "<span class='gold'><i>in</i> the kitchen</span>");
+    }
+
+       document.getElementById("colorText39x").innerHTML=text;
+}
+</script>
+
+<p1><b>Charlotte walked inside the house.</b></p1><br>
+
+<textarea onkeyup="textChange40x()"></textarea>
+<div id="colorText40x"></div><br>
+
+<script>
+var textChange40x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("inside the house")>-1){
+        text=text.replace("inside the house", "<span class='gold'><i>inside</i> the house</span>");
+    }
+
+       document.getElementById("colorText40x").innerHTML=text;
+}
+</script>
+</div>
+<hr>
+<div class="myframe">
+<h2>Verb phrase</h2>
+<p1>In linguistics, a verb phrase (VP) is a syntactic unit composed of a verb and its arguments except the subject of an independent clause or coordinate clause.<br>
+A verb phrase can be structured of a main verb alone, or a main verb plus any modal and/or auxiliary verbs.<br>
+The verb phrase appears headed by a verb, which is at italic in the examples below.</p1>
+<div id="myheader">
+<p style="background-color:red;">VERB PHRASE</p>
+</div>
+<p1><i>Try it yourself rewriting the bold sentences</i></p1><br><br>
+<p1><b>Yankee batters hit the ball well enough to win their first World Series since 2000.</b></p1><br>
+
+<textarea onkeyup="textChange41x()"></textarea>
+<div id="colorText41x"></div><br>
+
+<script>
+var textChange41x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("hit the ball well enough to win their first World Series since 2000")>-1){
+        text=text.replace("hit the ball well enough to win their first World Series since 2000", "<span class='red'><i>hit</i> the ball well enough to <i>win</i> their first World Series since 2000</span>");
+    }
+
+       document.getElementById("colorText41x").innerHTML=text;
+}
+</script>
+
+<p1><b>We all laughed.</b></p1><br>
+
+<textarea onkeyup="textChange42x()"></textarea>
+<div id="colorText42x"></div><br>
+
+<script>
+var textChange42x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("laughed")>-1){
+        text=text.replace("laughed", "<span class='red'><i>laughed</i></span>");
+    }
+
+       document.getElementById("colorText42x").innerHTML=text;
+}
+</script>
+
+<p1><b>Mary saw the man through the window.</b></p1><br>
+
+<textarea onkeyup="textChange43x()"></textarea>
+<div id="colorText43x"></div><br>
+
+<script>
+var textChange43x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("saw the man through the window")>-1){
+        text=text.replace("saw the man through the window", "<span class='red'><i>saw</i> the man through the window</span>");
+    }
+
+       document.getElementById("colorText43x").innerHTML=text;
+}
+</script>
+
+<p1><b>An apartment would have cost less than a hotel for four of us.</b></p1><br>
+
+<textarea onkeyup="textChange44x()"></textarea>
+<div id="colorText44x"></div><br>
+
+<script>
+var textChange44x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("would have cost")>-1){
+        text=text.replace("would have cost", "<span class='red'><i>would have cost</i></span>");
+    }
+
+       document.getElementById("colorText44x").innerHTML=text;
+}
+</script>
+
+<p1><b>David gave Mary a book.</b></p1><br>
+
+<textarea onkeyup="textChange45x()"></textarea>
+<div id="colorText45x"></div><br>
+
+<script>
+var textChange45x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("gave Mary a book")>-1){
+        text=text.replace("gave Mary a book", "<span class='red'><i>gave</i> Mary a book</span>");
+    }
+
+       document.getElementById("colorText45x").innerHTML=text;
+}
+</script>
+<!--46x-->
+<p1><b>John has finished the work.</b></p1><br>
+
+<textarea onkeyup="textChange47x()"></textarea>
+<div id="colorText47x"></div><br>
+
+<script>
+var textChange47x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("has finished the work")>-1){
+        text=text.replace("has finished the work", "<span class='red'><i>has finished</i> the work</span>");
+    }
+
+       document.getElementById("colorText47x").innerHTML=text;
+}
+</script>
+
+<p1><b>Dress smartly. Arrive on time.</b></p1><br>
+
+<textarea onkeyup="textChange48x()"></textarea>
+<div id="colorText48x"></div><br>
+
+<script>
+var textChange48x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("Dress")>-1){
+        text=text.replace("Dress", "<span class='red'><i>Dress</i></span>");
+    }
+  
+   if (text.indexOf("Arrive")>-1){
+        text=text.replace("Arrive", "<span class='red'><i>Arrive</i></span>");
+    }
+
+       document.getElementById("colorText48x").innerHTML=text;
+}
+</script>
+
+<p1><b>They do not want to try that.</b></p1><br>
+
+<textarea onkeyup="textChange49x()"></textarea>
+<div id="colorText49x"></div><br>
+
+<script>
+var textChange49x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("do not want to try that")>-1){
+        text=text.replace("do not want to try that", "<span class='red'><i>do</i> not <i>want</i> to <i>try</i> that</span>");
+    }
+
+       document.getElementById("colorText49x").innerHTML=text;
+}
+</script>
+
+<p1><b>House prices could fall during the next six months. </b></p1><br>
+
+<textarea onkeyup="textChange50x()"></textarea>
+<div id="colorText50x"></div><br>
+
+<script>
+var textChange50x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("could fall")>-1){
+        text=text.replace("could fall", "<span class='red'><i>could fall</i></span>");
+    }
+
+       document.getElementById("colorText50x").innerHTML=text;
+}
+</script>
+
+<p1><b>The picnickers were being eaten alive by mosquitos.</b></p1><br>
+
+<textarea onkeyup="textChange51x()"></textarea>
+<div id="colorText51x"></div><br>
+
+<script>
+var textChange51x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("were being eaten")>-1){
+        text=text.replace("were being eaten", "<span class='red'><i>were being eaten</i></span>");
+    }
+
+       document.getElementById("colorText51x").innerHTML=text;
+}
+</script>
+
+<p1><b>The work should have been finished by 30 January.</b></p1><br>
+
+<textarea onkeyup="textChange52x()"></textarea>
+<div id="colorText52x"></div><br>
+
+<script>
+var textChange52x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("should have been finished")>-1){
+        text=text.replace("should have been finished", "<span class='red'><i>should have been finished</i></span>");
+    }
+
+       document.getElementById("colorText52x").innerHTML=text;
+}
+</script>
+
+<p1><b>She kept screaming like a football maniac.</b></p1><br>
+
+<textarea onkeyup="textChange53x()"></textarea>
+<div id="colorText53x"></div><br>
+
+<script>
+var textChange53x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("kept screaming")>-1){
+        text=text.replace("kept screaming", "<span class='red'><i>kept screaming</i></span>");
+    }
+
+       document.getElementById("colorText53x").innerHTML=text;
+}
+</script>
+
+<p1><b>Thou shalt not kill.</b></p1><br>
+
+<textarea onkeyup="textChange54x()"></textarea>
+<div id="colorText54x"></div><br>
+
+<script>
+var textChange54x=function(){
+    var text=event.target.value;
+
+
+    if (text.indexOf("shalt not kill")>-1){
+        text=text.replace("shalt not kill", "<span class='red'><i>shalt</i> not <i>kill</i></span>");
+    }
+
+       document.getElementById("colorText54x").innerHTML=text;
+}
+</script>
+</div>
+
+<a href="#" data-action="mainScreen"><u>B</u>ack</a><br><br>
+
+</body>
+</html>
